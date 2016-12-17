@@ -1,15 +1,14 @@
 pkgname=kronometer
-pkgver=2.1.0
+pkgver=2.1.2
 pkgrel=1
 pkgdesc="A simple chronometer application."
-arch=('x86_64')
-url="http://aelog.org/kronometer"
+arch=('i686' 'x86_64')
+url=""
 license=('GPL2')
 depends=('kxmlgui' 'hicolor-icon-theme')
 makedepends=('extra-cmake-modules' 'kdoctools' 'python3')
-install=$pkgname.install
 source=(http://download.kde.org/stable/$pkgname/$pkgver/src/$pkgname-$pkgver.tar.xz)
-sha256sums=('316fc42b6ff55c90d14bb04f9e4b5947c828d1161ad9e24af14ce71118f107da')
+sha256sums=('0359c091df7d0e96b03ca1b2d2fd91a377d32d9d16d551892343edbe99a5320b')
 
 prepare() {
   mkdir -p build
