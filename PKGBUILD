@@ -2,7 +2,7 @@ pkgname=kronometer
 pkgver=2.1.2
 pkgrel=1
 pkgdesc="A simple chronometer application."
-arch=('i686' 'x86_64')
+arch=('x86_64')
 url=""
 license=('GPL2')
 depends=('kxmlgui' 'hicolor-icon-theme')
@@ -11,11 +11,14 @@ source=(http://download.kde.org/stable/$pkgname/$pkgver/src/$pkgname-$pkgver.tar
 sha256sums=('0359c091df7d0e96b03ca1b2d2fd91a377d32d9d16d551892343edbe99a5320b')
 
 prepare() {
-  mkdir -p build
+  cd $pkgname-${pkgver}
 }
 
 build() {
+
+  mkdir -p build
   cd build
+  
   cmake ../$pkgname-$pkgver \
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX=/usr \
