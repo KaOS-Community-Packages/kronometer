@@ -1,5 +1,5 @@
 pkgname=kronometer
-pkgver=2.1.2
+pkgver=2.2.1
 pkgrel=1
 pkgdesc="A simple chronometer application."
 arch=('x86_64')
@@ -8,7 +8,7 @@ license=('GPL2')
 depends=('kxmlgui' 'hicolor-icon-theme')
 makedepends=('extra-cmake-modules' 'kdoctools' 'python3')
 source=(http://download.kde.org/stable/$pkgname/$pkgver/src/$pkgname-$pkgver.tar.xz)
-sha256sums=('0359c091df7d0e96b03ca1b2d2fd91a377d32d9d16d551892343edbe99a5320b')
+sha256sums=('7d4092e576f9b0be20d5b36c57eee089964f8215672be88797c8c2b44ac462a1')
 
 prepare() {
   cd $pkgname-${pkgver}
